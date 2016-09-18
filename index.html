@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Solar Tasks</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header"><img src="plusbutton2.png" /><span>Solar Tasks</span></div>
+      <div class="wrap-list">
+        <a class="view-hidden-tasks" href="#">show inactive tasks</a>
+        <a class="view-active-tasks" href="#">show active tasks</a>
+        <form class="task-submission">
+          <label for="task-name">Task Name</label><input type="text" id="task-name" /><br />
+          <label for="due-after-x-days">Due after x days</label><input type="text" id="due-after-x-days" /><br />
+          <label for="appear-x-days-before-due">Appear x days before due</label><input type="text" id="appear-x-days-before-due" /><br />
+          <label for="num-days-since-last-completed">Number of days since last completed</label><input type="text" id="num-days-since-last-completed" /><br /><br />
+          <input type="submit" value="submit" /><br />
+        </form>
+        <ol class="list"></ol>
+      </div>
+    </div>
+    <script src="jquery-2.1.3.min.js"></script>
+    <script src="moment.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
